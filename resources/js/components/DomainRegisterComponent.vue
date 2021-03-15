@@ -65,7 +65,7 @@ export default {
                 url: '',
                 shortdesc: '',
                 desc: '',
-                paidFor: true,
+                paidFor: '1',
                 category_id: '1',
                 subcategory_id: '',
 
@@ -126,7 +126,7 @@ export default {
             axios.post('/domain', data)
             .then((response)=>{
                 this.form.reset();
-                window.location.href = "../"
+               // window.location.href = "../"
             })
             .catch(error => this.form.errors.record(error.response.data));
         }

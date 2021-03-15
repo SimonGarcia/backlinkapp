@@ -58,7 +58,7 @@ class DomainController extends Controller
         $domain->description = $request['desc'];
         $domain->category_id = $request['category_id'];
         $domain->subcategory_id = $request['subcategory_id'];
-        //$domain->payment_id = uniqid();
+        $domain->paid = $request['paid'];
 
         //Pregunta si hay una imagen agregada, le coloca la extencion original
         //El nombre mediante la fecha de publicacion y guarda en la carpeta publica
